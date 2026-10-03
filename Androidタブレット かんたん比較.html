@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Androidタブレット かんたん比較</title>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#1c2630;--sub:#55636f;--line:#d5dce2;--ac:#0b6e66;--acbg:#e1f2f0;--warn:#fff4d6;--s:#1428a0;--l:#c8102e;--x:#e8590c;--a:#232f3e}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12171c;--card:#1b232b;--ink:#eef2f5;--sub:#a5b2bd;--line:#33404b;--ac:#4fd1c5;--acbg:#16322f;--warn:#3a321a;--s:#4a63e0;--l:#e0435c;--x:#f07a3a;--a:#4a5a6e}}
+:root[data-theme=dark]{--bg:#12171c;--card:#1b232b;--ink:#eef2f5;--sub:#a5b2bd;--line:#33404b;--ac:#4fd1c5;--acbg:#16322f;--warn:#3a321a;--s:#4a63e0;--l:#e0435c;--x:#f07a3a;--a:#4a5a6e}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "BIZ UDPGothic","Hiragino Sans","Yu Gothic",Meiryo,sans-serif}
+a{color:var(--ac)}
+header{background:var(--card);border-bottom:2px solid var(--line);padding:12px 16px}
+.in{max-width:1200px;margin:0 auto}
+h1{font-size:1.25rem;margin:0 0 8px}
+nav{display:flex;gap:8px;flex-wrap:wrap}
+nav a{padding:8px 16px;border-radius:8px;border:2px solid var(--line);text-decoration:none;color:var(--ink);font-weight:700}
+nav a.on{background:var(--ac);border-color:var(--ac);color:var(--bg)}
+main{max-width:1200px;margin:0 auto;padding:16px}
+h2{font-size:1.35rem;margin:8px 0}
+.note{background:var(--warn);border-radius:8px;padding:10px 14px;font-size:.9rem;margin:8px 0 16px}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.bar label{font-weight:700}
+select,button{font:inherit;color:var(--ink)}
+select{padding:8px 10px;border-radius:8px;border:2px solid var(--line);background:var(--card)}
+.chip{padding:6px 14px;border-radius:99px;border:2px solid var(--line);background:var(--card);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.wrap{overflow:auto;max-height:78vh;border:2px solid var(--line);border-radius:10px;background:var(--card)}
+table{border-collapse:separate;border-spacing:0;min-width:100%}
+th,td{padding:10px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;text-align:left;background:var(--card);font-size:.92rem;min-width:190px;max-width:190px}
+th.rh{position:sticky;left:0;z-index:2;min-width:104px;max-width:104px;background:var(--acbg);font-size:.88rem}
+th.rh small{display:block;font-weight:400;color:var(--sub)}
+thead th{position:sticky;top:0;z-index:3;background:var(--card)}
+thead th.rh{z-index:4;left:0}
+.mk{display:inline-block;color:#fff;font-size:.78rem;padding:1px 8px;border-radius:4px;margin-bottom:4px}
+.mk.s{background:var(--s)}.mk.l{background:var(--l)}.mk.x{background:var(--x)}.mk.a{background:var(--a)}
+.nm{display:block;font-weight:700;font-size:1rem}
+.btn{display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;background:var(--ac);color:var(--bg);text-decoration:none;font-weight:700;font-size:.88rem;border:0;cursor:pointer}
+.price{font-size:1.15rem;font-weight:700}
+.st{color:#d98a00;letter-spacing:2px;font-size:1.05rem}
+.ok{color:var(--ac);font-weight:700}.ng{color:var(--l);font-weight:700}
+.words{margin-top:20px;background:var(--card);border:2px solid var(--line);border-radius:10px;padding:12px 18px}
+.words dt{font-weight:700;margin-top:8px}.words dd{margin:0;color:var(--sub)}
+.card{background:var(--card);border:2px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}
+fieldset{border:2px solid var(--line);border-radius:10px;margin:0 0 14px;padding:10px 16px;background:var(--card)}
+legend{font-weight:700;padding:0 6px}
+fieldset label{display:block;padding:7px 4px;cursor:pointer}
+fieldset input{width:1.1rem;height:1.1rem;margin-right:8px;accent-color:var(--ac)}
+.rank{border-left:8px solid var(--ac)}
+.rank h3{margin:0}
+.dt th{width:9em;background:var(--acbg);position:static;min-width:0;max-width:none}.dt td{max-width:none;min-width:0}
+.dt{width:100%}
+@media(max-width:600px){th,td{min-width:160px;max-width:160px}th.rh{min-width:88px;max-width:88px}}
+</style></head><body>
+<header><div class="in"><h1>📱 Androidタブレット かんたん比較</h1>
+<nav><a href="#/" id="n1">比較表</a><a href="#/guide" id="n2">質問で選ぶ(購入サポート)</a></nav></div></header>
+<main id="app"></main>
+<script>
+const MK={s:['Samsung','s'],l:['Lenovo','l'],x:['Xiaomi','x'],a:['Amazon','a']};
+const K='https://kakaku.com/';
+const P=[
+{id:'s10fe',m:'s',nm:'Galaxy Tab S10 FE',pr:75000,pt:'約7.5万〜8.4万円',sz:10.9,ez:4,one:'防水・Sペン付き。長く安心して使える優等生',who:'動画・読書・手書きメモ。1台を長く使いたい人',good:'Sペンが付いてくる／水に強い(IP68)／OSの更新が7年保証／軽い(約497g)',bad:'価格が高め／画面の明るさ・なめらかさは上位機にやや劣る',rv:'価格.comの満足度は4.28(4件)と3.38(2人)で分かれます。「軽くて持ち運びやすい」「長期サポートが決め手」と好評な一方、「この価格なら性能がもう少し欲しい」という声もあります。',src:[['価格.com',K+'item/J0000047672/'],['m-gadget レビュー','https://m-gadget.com/10731']],pen:2,g:1,sc:{v:3,r:3,g:2,n:3,w:2,k:2}},
+{id:'s10feplus',m:'s',nm:'Galaxy Tab S10 FE+',pr:109010,pt:'約10.9万円(発売時の価格)',sz:13.1,ez:3,one:'S10 FEの大画面版。仕事・イラスト向き',who:'大きな画面で作業したい人',good:'13型クラスの大画面／Sペン付き／防水／長期保証',bad:'価格が高い／大きいので持ち歩きには向かない',rv:'今回の調査では、口コミを十分に確認できていません。',src:[['発売時の価格(sim-resis)','https://sim-resis.com/36738/']],pen:2,g:1,sc:{v:3,r:2,g:2,n:3,w:3,k:1},chk:1},
+{id:'a9plus',m:'s',nm:'Galaxy Tab A9+',pr:28000,pt:'約2.5万〜3万円台(目安)',sz:11,ez:4,one:'手ごろな価格のGalaxy。ふだん使いに',who:'動画とネット中心で、安心できるメーカーが良い人',good:'有名メーカーの安心感／11型で見やすい／価格が手ごろ',bad:'ペンは使えない／重いゲームは苦手',rv:'今回の調査では、口コミを十分に確認できていません。',src:[],pen:0,g:1,sc:{v:3,r:3,g:1,n:1,w:1,k:3},chk:1},
+{id:'ideapro',m:'l',nm:'Lenovo Idea Tab Pro',pr:57480,pt:'約5.7万円(初代)※後継機は約8万円',sz:12.7,ez:3,one:'3K高画質の大画面。性能が高くペン付き',who:'動画もゲームも仕事もこれ1台で、大画面が好きな人',good:'画面がとても細かい(3K・144Hz)／処理が速い／ペン付き／電池が大きい(10200mAh)／microSD対応',bad:'大きくて片手では持ちにくい／ゲームでは親指が届きにくい',rv:'「3Kの12.7型で見やすい」「原神など重いゲームも動く」と高評価。一方で、画面が大きく操作しづらい場面があるという指摘もあります。',src:[['for-real レビュー','https://for-real.jp/?p=101342'],['同・ベンチ計測','https://for-real.jp/lenovo-idea-tab-pro-antutu-benchmark/']],pen:2,g:1,sc:{v:3,r:2,g:3,n:3,w:3,k:1}},
+{id:'ideatab',m:'l',nm:'Lenovo Idea Tab',pr:35000,pt:'約3万円台(目安)',sz:11,ez:4,one:'価格と性能のバランスがよい普段使いモデル',who:'動画・ネット・勉強用。初めてのタブレット',good:'手ごろな価格／手書きペンに対応',bad:'ペンは付いていない(別売)／上位機ほど速くない',rv:'比較レビューによると、ペンは付属せず別に買う必要があります。',src:[['for-real 比較レビュー','https://for-real.jp/?p=94961']],pen:1,g:1,sc:{v:3,r:3,g:2,n:2,w:2,k:3},chk:1},
+{id:'lenovotab',m:'l',nm:'Lenovo Tab(エントリー)',pr:25000,pt:'約2万円台(目安)',sz:11,ez:4,one:'とにかく安く始めたい人向けの入門機',who:'子ども用・動画視聴・サブ機',good:'価格が安い／シンプルで迷わない',bad:'処理は控えめ／重いゲームや本格作業には不向き',rv:'ローエンド(入門)モデルと紹介されています。口コミは十分に確認できていません。',src:[['for-real(紹介記事)','https://for-real.jp/lenovo-idea-tab-pro-antutu-benchmark/']],pen:0,g:1,sc:{v:2,r:3,g:0,n:1,w:0,k:3},chk:1},
+{id:'redmi2',m:'x',nm:'Redmi Pad 2',pr:21980,pt:'約2.2万〜2.5万円',sz:11,ez:4,one:'2万円台なのに画面がきれい。コスパが高い',who:'動画・電子書籍・ネットが中心の人',good:'画面が細かい(2.5K・90Hz)／電池が大きい(9000mAh)／microSDで容量を増やせる／安い',bad:'処理は控えめで重いゲームは苦手／ペンは別売(Redmi Smart Pen)',rv:'「2万円台でこの画面はすごい」とコスパを評価する声が多いです。2026年8月のAmazonセールでは24,980円になりました。',src:[['ライフハッカー','https://www.lifehacker.jp/article/amazon-timesale-fes-2026-0828-4/'],['価格.com(4G版の口コミ)',K+'review/J0000048272'],['発売ニュース','https://k-tai.watch.impress.co.jp/docs/news/2029153.html']],pen:1,g:1,sc:{v:3,r:3,g:1,n:2,w:1,k:3}},
+{id:'redmi2_4g',m:'x',nm:'Redmi Pad 2 4G',pr:27980,pt:'約2.8万円',sz:11,ez:3,one:'SIMを入れて外でも使える通信対応版',who:'Wi-Fiがない外出先でもネットを使いたい人',good:'SIMカードで通信できる／11型の高画質／容量128GB',bad:'SIM契約が別に必要で、設定がやや複雑／充電しながらUSB機器を使えない点の指摘あり',rv:'「通信対応・11型・128GBで実売2.5万円前後は魅力的」との声があります。一方、設定が複雑なことや、充電中にUSB機器を使うと充電が止まる点が指摘されています。',src:[['価格.com',K+'review/J0000048272']],pen:1,g:1,sc:{v:3,r:3,g:1,n:2,w:2,k:2}},
+{id:'redmi97',m:'x',nm:'Redmi Pad 2 9.7',pr:23709,pt:'約2.4万〜3万円',sz:9.7,ez:4,one:'持ち運びやすい9.7型の小型モデル',who:'かばんに入れて持ち歩く人、片手で読書したい人',good:'コンパクト／2Kの細かい画面／価格が手ごろ',bad:'画面が小さめでマンガの見開きは窮屈／発売間もなく口コミが少ない',rv:'2026年4月28日発売で、口コミはまだ少なめです。価格.comのレビューで最新の声を確認してください。',src:[['価格.com',K+'review/J0000050482/']],pen:0,g:1,sc:{v:3,r:3,g:1,n:1,w:0,k:3}},
+{id:'fire10',m:'a',nm:'Fire HD 10',pr:14980,pt:'約1.3万〜1.9万円(セール時)',sz:10.1,ez:5,one:'とにかく安い。動画・電子書籍の専用機に',who:'Prime VideoやKindleを楽しみたい人、子ども',good:'圧倒的に安い／Amazonのサービスがすぐ使える／10.1型',bad:'YouTubeなどGoogleのアプリが標準では使えない／動きがもたつくことがある',rv:'従来のFire HD 10は動きがもたつく場面があり、上位のFire Max 11のほうが軽快、というレビューがあります。',src:[['appllio レビュー','https://appllio.com/fire-max-11-review'],['価格(PC Watch)','https://pc.watch.impress.co.jp/docs/news/todays_sales/1571304.html']],pen:0,g:0,sc:{v:3,r:3,g:0,n:0,w:0,k:3}},
+{id:'firemax',m:'a',nm:'Fire Max 11',pr:27980,pt:'約2.7万〜3.5万円',sz:11,ez:4,one:'Fireの最上位。金属ボディで動きも軽快',who:'Amazonのサービス中心で、少し良い機種がほしい人',good:'金属ボディで高級感／指紋認証／動きが軽快／ペン・キーボードに対応(別売)',bad:'YouTubeなどGoogleのアプリが標準では使えない／Fire HD 10より1万円ほど高い',rv:'従来のFireより軽快で高級感が増したと評価される一方、3万円台になったので慎重に選びたい、という意見もあります。',src:[['appllio レビュー','https://appllio.com/fire-max-11-review'],['Impress 比較','https://forest.watch.impress.co.jp/docs/bookwatch/tabletrecom/1514881.html']],pen:1,g:0,sc:{v:3,r:3,g:1,n:1,w:1,k:3}},
+{id:'fire8',m:'a',nm:'Fire HD 8',pr:10980,pt:'約1.1万〜1.3万円(セール時)',sz:8,ez:5,one:'手のひらサイズのいちばん安い入門機',who:'子ども・電子書籍・サブ機',good:'最安クラス／軽くて持ちやすい',bad:'画面の細かさは控えめ(1280×800)／Googleのアプリが標準では使えない',rv:'今回の調査では、口コミを十分に確認できていません。',src:[['価格(Impress)','https://internet.watch.impress.co.jp/docs/shopping/2018125.html']],pen:0,g:0,sc:{v:2,r:3,g:0,n:0,w:0,k:3}}
+];
+const yen=n=>n.toLocaleString('ja-JP')+'円';
+const star=n=>'<span class="st" role="img" aria-label="5点中'+n+'点">'+'★'.repeat(n)+'☆'.repeat(5-n)+'</span>';
+const PEN=['使えません','別売で使えます','付属しています'];
+const mkb=p=>`<span class="mk ${MK[p.m][1]}">${MK[p.m][0]}</span>`;
+const ext=s=>s.length?s.map(x=>`<a href="${x[1]}" target="_blank" rel="noopener">${x[0]}</a>`).join(' / '):'—';
+const ROWS=[
+['ひとことで言うと','',p=>p.one],
+['お値段','だいたいの目安',p=>`<span class="price">${p.pt}</span>`+(p.chk?'<br><small>※目安。購入前に確認を</small>':'')],
+['画面の大きさ','数字が大きいほど大画面',p=>`<b>${p.sz}</b>インチ`],
+['使いやすさ','初心者でも迷いにくいか',p=>star(p.ez)],
+['こんな人に','',p=>p.who],
+['いいところ','',p=>p.good.split('／').map(t=>'・'+t).join('<br>')],
+['気になるところ','',p=>p.bad.split('／').map(t=>'・'+t).join('<br>')],
+['みんなの口コミ','要約です',p=>p.rv],
+['YouTubeなど<br>Googleのアプリ','',p=>p.g?'<span class="ok">○ ふつうに使えます</span>':'<span class="ng">△ 標準では使えません</span>'],
+['手書きペン','',p=>PEN[p.pen]]
+];
+let sortK='price',mkF='all';
+const SORT={price:['お値段が安い順',(a,b)=>a.pr-b.pr],priceD:['お値段が高い順',(a,b)=>b.pr-a.pr],size:['画面が大きい順',(a,b)=>b.sz-a.sz],sizeS:['画面が小さい順(持ち運びやすい)',(a,b)=>a.sz-b.sz],ease:['使いやすさが高い順',(a,b)=>b.ez-a.ez||a.pr-b.pr],maker:['メーカー別',(a,b)=>a.m.localeCompare(b.m)]};
+function table(){
+ const L=P.filter(p=>mkF=='all'||p.m==mkF).sort(SORT[sortK][1]);
+ return `<h2>タブレット比較表</h2>
+<div class="note">価格と口コミは2026年10月4日ごろに調べた<b>目安</b>です。セールや在庫で変わるため、買う前に販売ページで必ず確認してください。「※目安」は今回の調査で価格を確認しきれていない機種です。使いやすさの★は、わかりやすさを基準にした編集上の目安です。</div>
+<div class="bar"><label for="so">並べ替え</label><select id="so">${Object.entries(SORT).map(([k,v])=>`<option value="${k}"${k==sortK?' selected':''}>${v[0]}</option>`).join('')}</select>
+<span>メーカー:</span>${[['all','すべて'],...Object.entries(MK).map(([k,v])=>[k,v[0]])].map(([k,t])=>`<button class="chip" data-mk="${k}" aria-pressed="${k==mkF}">${t}</button>`).join('')}</div>
+<p style="margin:4px 0 8px;color:var(--sub);font-size:.9rem">表は左右・上下にスクロールできます。左の項目名は動きません。気になる機種は「くわしく見る」へ。</p>
+<div class="wrap"><table><thead><tr><th class="rh" scope="col">項目</th>${L.map(p=>`<th scope="col">${mkb(p)}<span class="nm">${p.nm}</span><a class="btn" href="#/p/${p.id}">くわしく見る</a></th>`).join('')}</tr></thead>
+<tbody>${ROWS.map(r=>`<tr><th class="rh" scope="row">${r[0]}${r[1]?`<small>${r[1]}</small>`:''}</th>${L.map(p=>`<td>${r[2](p)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+<p>どれにするか迷ったら → <a class="btn" href="#/guide">質問に答えて選ぶ</a></p>
+<dl class="words"><h3 style="margin:0">むずかしい言葉の説明</h3>
+<dt>インチ(画面の大きさ)</dt><dd>8＝手のひらサイズ／10〜11＝雑誌より少し小さい／12〜13＝大きな画面。大きいほど見やすい反面、重くなります。</dd>
+<dt>2K・3K(画面の細かさ)</dt><dd>数字が大きいほど文字や写真がくっきり見えます。</dd>
+<dt>Fire OS</dt><dd>Amazonのタブレット用の仕組みです。Prime VideoやKindleはすぐ使えますが、YouTubeなどGoogleのアプリは標準では入っていません。</dd>
+<dt>防水(IP68)</dt><dd>水にぬれても壊れにくい性能です。お風呂やキッチンで使う人に向いています。</dd>
+<dt>microSD</dt><dd>小さなカードで保存容量を増やせる機能です。</dd></dl>`;}
+function detail(id){
+ const p=P.find(x=>x.id==id);if(!p)return'<p>見つかりませんでした。<a href="#/">比較表へ戻る</a></p>';
+ const q=encodeURIComponent(p.nm);
+ return `<p><a href="#/">← 比較表へ戻る</a></p><h2>${mkb(p)} ${p.nm}</h2><p style="font-size:1.1rem;margin:0 0 8px">${p.one}</p>
+<table class="dt">${ROWS.map(r=>`<tr><th scope="row">${r[0]}</th><td>${r[2](p)}</td></tr>`).join('')}
+<tr><th scope="row">口コミの出典</th><td>${ext(p.src)}</td></tr></table>
+<p><a class="btn" href="https://www.amazon.co.jp/s?k=${q}" target="_blank" rel="noopener">Amazonで探す</a> <a class="btn" href="${K}search_results/${q}/" target="_blank" rel="noopener">価格.comで最安値を見る</a> <a class="btn" href="#/guide">質問で選ぶ</a></p>`;}
+const Q=[
+['u','いちばんの使いみちは?',[['v','動画・YouTube・映画'],['r','電子書籍・マンガ'],['g','ゲーム'],['n','手書きメモ・勉強・イラスト'],['w','仕事・パソコン代わり'],['k','子ども・家族で共有']]],
+['b','予算はどれくらい?',[['30000','〜3万円'],['60000','3万〜6万円'],['120000','6万円以上でもOK'],['0','こだわらない']]],
+['s','画面の大きさは?',[['8.5','持ち運びやすい小さめ(8〜9型)'],['10.8','ふつう(10〜11型)'],['12.8','見やすい大画面(12型〜)']]],
+['o','YouTubeやGoogle Playのアプリをふつうに使いたい?',[['1','はい(使いたい)'],['0','Amazonのサービス中心でも大丈夫']]],
+['e','手書きペンは使う?',[['1','使う'],['0','使わない']]]];
+function guide(){return `<h2>質問に答えて選ぶ</h2><p>5つの質問に答えると、おすすめを3つ紹介します。</p><div id="qs">${Q.map(q=>`<fieldset><legend>${q[1]}</legend>${q[2].map((o,i)=>`<label><input type="radio" name="${q[0]}" value="${o[0]}"${i==0?' checked':''}>${o[1]}</label>`).join('')}</fieldset>`).join('')}</div><button class="btn" id="go" style="font-size:1.05rem;padding:10px 22px">おすすめを見る</button><div id="res"></div>`;}
+function recommend(){
+ const v={};Q.forEach(q=>v[q[0]]=document.querySelector(`input[name=${q[0]}]:checked`).value);
+ const bud=+v.b,sz=+v.s;
+ const R=P.map(p=>{let s=p.sc[v.u]*10,why=[];
+  if(p.sc[v.u]>=3)why.push('使いみちにぴったり');
+  if(bud){if(p.pr<=bud){s+=15;why.push('予算内('+p.pt+')')}else s-=Math.min(40,(p.pr-bud)/1000)}
+  const d=Math.abs(p.sz-sz);s-=d*5;if(d<1.5)why.push('希望の大きさに近い('+p.sz+'型)');
+  if(v.o=='1'&&!p.g)s-=100;
+  if(v.e=='1'){s+=p.pen*6;if(p.pen==2)why.push('ペンが付いてくる');else if(p.pen==1)why.push('ペンが使える(別売)')}
+  s+=p.ez*2;if(p.ez>=4)why.push('使いやすい');
+  return{p,s,why}}).sort((a,b)=>b.s-a.s).slice(0,3);
+ document.getElementById('res').innerHTML=`<h2>あなたへのおすすめ</h2>`+R.map((r,i)=>`<div class="card rank"><h3>${i+1}位 ${mkb(r.p)} ${r.p.nm}</h3><p style="margin:4px 0">${r.p.one}</p><p style="margin:4px 0"><b>${r.p.pt}</b> ／ ${r.p.sz}インチ</p><p style="margin:4px 0;color:var(--sub)">おすすめの理由:${r.why.join('、')||'バランスが良い'}</p><a class="btn" href="#/p/${r.p.id}">くわしく見る</a></div>`).join('')+'<p><a href="#/">比較表で見比べる</a></p>';
+ document.getElementById('res').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});}
+function route(){
+ const h=location.hash||'#/',a=document.getElementById('app');
+ document.getElementById('n1').className=h=='#/'||h==''?'on':'';document.getElementById('n2').className=h=='#/guide'?'on':'';
+ if(h.startsWith('#/p/'))a.innerHTML=detail(h.slice(4));
+ else if(h=='#/guide'){a.innerHTML=guide();document.getElementById('go').onclick=recommend}
+ else{a.innerHTML=table();document.getElementById('so').onchange=e=>{sortK=e.target.value;route()};a.querySelectorAll('[data-mk]').forEach(b=>b.onclick=()=>{mkF=b.dataset.mk;route()})}
+ if(!h.startsWith('#/p/')||1)window.scrollTo(0,0);}
+addEventListener('hashchange',route);route();
+</script></body></html>
